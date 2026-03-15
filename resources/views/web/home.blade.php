@@ -33,10 +33,10 @@
         <div class="grid grid-cols-2 gap-4">
             @php
                 $heroCards = [
-                    ['title' => 'Tecnología', 'desc' => 'Cables, audífonos, power banks y más.', 'bg' => 'from-[#c9a86a]/40 to-[#1a1a1a]', 'image' => 'storage/home/categoria-tecnologia.png', 'position' => 'center 0%'],
-                    ['title' => 'Hogar', 'desc' => 'Humidificadores, esencias y lámparas.', 'bg' => 'from-[#c9a86a]/20 to-[#2a2a2a]', 'image' => 'storage/home/categoria-hogar.png', 'position' => null],
-                    ['title' => 'Auto y moto', 'desc' => 'Soportes, aromatizantes y accesorios.', 'bg' => 'from-[#c9a86a]/30 to-[#202020]', 'image' => 'storage/home/categoria-autoymoto.png', 'position' => 'center 15%'],
-                    ['title' => 'Dama y caballero', 'desc' => 'Regalos, cuidado personal y más.', 'bg' => 'from-[#c9a86a]/25 to-[#1c1c1c]', 'image' => 'storage/home/categoria-damaycaballero.png', 'position' => '75% center'],
+                    ['title' => 'Tecnología', 'desc' => 'Cables, audífonos, power banks y más.', 'bg' => 'from-[#c9a86a]/40 to-[#1a1a1a]', 'image' => 'images/home/categoria-tecnologia.png', 'position' => 'center 0%'],
+                    ['title' => 'Hogar', 'desc' => 'Humidificadores, esencias y lámparas.', 'bg' => 'from-[#c9a86a]/20 to-[#2a2a2a]', 'image' => 'images/home/categoria-hogar.png', 'position' => null],
+                    ['title' => 'Auto y moto', 'desc' => 'Soportes, aromatizantes y accesorios.', 'bg' => 'from-[#c9a86a]/30 to-[#202020]', 'image' => 'images/home/categoria-autoymoto.png', 'position' => 'center 15%'],
+                    ['title' => 'Dama y caballero', 'desc' => 'Regalos, cuidado personal y más.', 'bg' => 'from-[#c9a86a]/25 to-[#1c1c1c]', 'image' => 'images/home/categoria-damaycaballero.png', 'position' => '75% center'],
                 ];
             @endphp
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios Kebin</title>
-    <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('storage/home/logo2.png') }}">
-    <link rel="shortcut icon" type="image/png" sizes="64x64" href="{{ asset('storage/home/logo2.png') }}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('images/home/logo2.png') }}">
+    <link rel="shortcut icon" type="image/png" sizes="64x64" href="{{ asset('images/home/logo2.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-[#0f0f0f] text-white min-h-screen">
@@ -13,7 +13,7 @@
     <header class="sticky top-0 z-50 border-b border-white/10 bg-[#111111]/95 backdrop-blur">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
             <a href="{{ route('home') }}" class="flex items-center gap-3">
-                <img src="{{ asset('storage/home/logo-tienda.png') }}" alt="Accesorios Kebin" class="h-16 w-auto">
+                <img src="{{ asset('images/home/logo-tienda.png') }}" alt="Accesorios Kebin" class="h-16 w-auto">
                 <div>
                     <p class="text-xs uppercase tracking-[0.35em] text-[#c9a86a]">Accesorios</p>
                     <h1 class="text-sm font-semibold tracking-[0.25em] text-white">KEBIN</h1>
