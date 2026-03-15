@@ -62,7 +62,7 @@
                         <img
                             :src="imagen"
                             alt="Miniatura"
-                            class="h-24 w/full object-cover"
+                            class="block h-24 w-full object-cover"
                         >
                     </button>
                 </template>
