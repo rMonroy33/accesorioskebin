@@ -138,20 +138,6 @@ class HomeController extends Controller
         return view('web.producto-detalle', compact('producto', 'relacionados'));
     }
 
-    public function comoComprar()
-    {
-        return view('web.como-comprar');
-    }
-
-    public function metodosPago()
-    {
-        return view('web.metodos-pago');
-    }
-
-    public function contacto()
-    {
-        return view('web.contacto');
-    }
 
     private function obtenerSubcategoriasVisibles($categorias, $categoriaSlug)
     {

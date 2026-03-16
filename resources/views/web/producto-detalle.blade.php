@@ -39,6 +39,8 @@
                         <img
                             :src="imagenes[activa]"
                             alt="{{ $producto->name }}"
+                            loading="lazy"
+                            decoding="async"
                             class="h-full w-full object-cover"
                         >
                     </template>
@@ -62,6 +64,8 @@
                         <img
                             :src="imagen"
                             alt="Miniatura"
+                            loading="lazy"
+                            decoding="async"
                             class="block h-24 w-full object-cover"
                         >
                     </button>
@@ -138,7 +142,7 @@
 
                 @if ($producto->is_sold_out)
                     <a
-                        href="https://wa.me/523120000000?text=Hola,%20me%20interesa%20consultar%20disponibilidad%20del%20producto%20{{ urlencode($producto->name) }}"
+                        href="https://wa.me/527531160065?text=Hola,%20me%20interesa%20consultar%20disponibilidad%20del%20producto%20{{ urlencode($producto->name) }}"
                         target="_blank"
                         class="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#c9a86a] hover:text-[#c9a86a]"
                     >
@@ -161,7 +165,7 @@
                 @endif
 
                 <a
-                    href="https://wa.me/523120000000?text=Hola,%20me%20interesa%20el%20producto%20{{ urlencode($producto->name) }}"
+                    href="https://wa.me/527531160065?text=Hola,%20me%20interesa%20el%20producto%20{{ urlencode($producto->name) }}"
                     target="_blank"
                     class="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#c9a86a] hover:text-[#c9a86a]"
                 >

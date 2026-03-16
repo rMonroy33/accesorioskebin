@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios Kebin</title>
-    <link rel="icon" type="image/png" sizes="64x64" href="{{ asset('images/home/logo2.png') }}">
-    <link rel="shortcut icon" type="image/png" sizes="64x64" href="{{ asset('images/home/logo2.png') }}">
+    <link rel="icon" type="image/webp" sizes="64x64" href="{{ asset('images/home/logo2.webp') }}">
+    <link rel="shortcut icon" type="image/webp" sizes="64x64" href="{{ asset('images/home/logo2.webp') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-[#0f0f0f] text-white min-h-screen">
@@ -13,7 +13,7 @@
     <header class="sticky top-0 z-50 border-b border-white/10 bg-[#111111]/95 backdrop-blur">
         <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
             <a href="{{ route('home') }}" class="flex items-center gap-3">
-                <img src="{{ asset('images/home/logo-tienda.png') }}" alt="Accesorios Kebin" class="h-16 w-auto">
+                <img src="{{ asset('images/home/logo2.webp') }}" alt="Accesorios Kebin" class="h-16 w-auto">
                 <div>
                     <p class="text-xs uppercase tracking-[0.35em] text-[#c9a86a]">Accesorios</p>
                     <h1 class="text-sm font-semibold tracking-[0.25em] text-white">KEBIN</h1>
@@ -23,13 +23,10 @@
             <nav class="hidden items-center gap-6 md:flex">
                 <a href="{{ route('home') }}" class="text-sm text-white/80 transition hover:text-[#c9a86a]">Inicio</a>
                 <a href="{{ route('catalogo') }}" class="text-sm text-white/80 transition hover:text-[#c9a86a]">Catálogo</a>
-                <a href="{{ route('como-comprar') }}" class="text-sm text-white/80 transition hover:text-[#c9a86a]">Cómo comprar</a>
-                <a href="{{ route('metodos-pago') }}" class="text-sm text-white/80 transition hover:text-[#c9a86a]">Métodos de pago</a>
-                <a href="{{ route('contacto') }}" class="text-sm text-white/80 transition hover:text-[#c9a86a]">Contacto</a>
             </nav>
 
             <div class="hidden items-center gap-3 md:flex">
-                <a href="https://wa.me/523120000000?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20en%20ACCESORIOS%20KEBIN"
+                <a href="https://wa.me/527531160065?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20en%20ACCESORIOS%20KEBIN"
                    target="_blank"
                    class="rounded-full bg-[#c9a86a] px-5 py-2 text-sm font-semibold text-black transition hover:opacity-90">
                     Pedir por WhatsApp
@@ -84,10 +81,7 @@
             <div class="space-y-3 px-4 py-4">
                 <a href="{{ route('home') }}" class="block text-sm text-white/80">Inicio</a>
                 <a href="{{ route('catalogo') }}" class="block text-sm text-white/80">Catálogo</a>
-                <a href="{{ route('como-comprar') }}" class="block text-sm text-white/80">Cómo comprar</a>
-                <a href="{{ route('metodos-pago') }}" class="block text-sm text-white/80">Métodos de pago</a>
-                <a href="{{ route('contacto') }}" class="block text-sm text-white/80">Contacto</a>
-                <a href="https://wa.me/523120000000?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20en%20ACCESORIOS%20KEBIN"
+                <a href="https://wa.me/527531160065?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20en%20ACCESORIOS%20KEBIN"
                    target="_blank"
                    class="mt-2 block rounded-full bg-[#c9a86a] px-4 py-2 text-center text-sm font-semibold text-black">
                     Pedir por WhatsApp
@@ -113,9 +107,6 @@
                 <h4 class="text-sm font-semibold text-white">Enlaces</h4>
                 <ul class="mt-3 space-y-2 text-sm text-white/65">
                     <li><a href="{{ route('catalogo') }}" class="hover:text-[#c9a86a]">Catálogo</a></li>
-                    <li><a href="{{ route('como-comprar') }}" class="hover:text-[#c9a86a]">Cómo comprar</a></li>
-                    <li><a href="{{ route('metodos-pago') }}" class="hover:text-[#c9a86a]">Métodos de pago</a></li>
-                    <li><a href="{{ route('contacto') }}" class="hover:text-[#c9a86a]">Contacto</a></li>
                 </ul>
             </div>
 
@@ -315,7 +306,7 @@
                     mensaje += `%0ATotal estimado: $${this.totalCarrito().toFixed(2)}%0A`;
                     mensaje += '%0AMe compartes disponibilidad y datos para transferencia, por favor.';
 
-                    const telefono = '523120000000';
+                    const telefono = '527531160065';
                     const url = `https://wa.me/${telefono}?text=${mensaje}`;
 
                     window.open(url, '_blank');

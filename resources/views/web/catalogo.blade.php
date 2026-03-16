@@ -124,9 +124,9 @@
             @endif
         </div>
 
-        <div class="grid gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
+        <div class="grid items-start gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
             <aside
-                class="space-y-6 rounded-3xl border border-white/10 bg-[#151515] p-6 lg:block"
+                class="space-y-6 rounded-3xl border border-white/10 bg-[#151515] p-6 self-start lg:block lg:sticky lg:top-24"
                 :class="{ 'block': filtrosAbiertos, 'hidden': !filtrosAbiertos }"
             >
                 <div>
@@ -267,9 +267,11 @@
                                     <a href="{{ route('producto.detalle', $producto->slug) }}" class="block">
                                         <div class="relative aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-[#111111]">
                                             @if($producto->main_image)
-                                                <img src="{{ asset('storage/' . $producto->main_image) }}"
-                                                     alt="{{ $producto->name }}"
-                                                     class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105">
+                                                   <img src="{{ asset('storage/' . $producto->main_image) }}"
+                                                       alt="{{ $producto->name }}"
+                                                       loading="lazy"
+                                                       decoding="async"
+                                                       class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-105">
                                             @else
                                                 <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#c9a86a]/30 via-[#202020] to-[#111111] text-sm text-white/40">
                                                     Sin imagen
@@ -374,7 +376,7 @@
                                         @endif
 
                                         <a
-                                            href="https://wa.me/523120000000?text=Hola,%20me%20interesa%20el%20producto%20{{ urlencode($producto->name) }}"
+                                            href="https://wa.me/527531160065?text=Hola,%20me%20interesa%20el%20producto%20{{ urlencode($producto->name) }}"
                                             class="flex h-11 w-full items-center justify-center rounded-lg border border-white/15 px-3 text-sm font-semibold text-white transition hover:border-[#c9a86a] hover:text-[#c9a86a] sm:h-12 sm:flex-1 sm:px-4"
                                         >
                                             WhatsApp

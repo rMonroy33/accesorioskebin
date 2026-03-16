@@ -11,9 +11,6 @@ use App\Http\Controllers\Admin\ProductImageController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/catalogo', [HomeController::class, 'catalogo'])->name('catalogo');
 Route::get('/producto/{slug}', [HomeController::class, 'detalleProducto'])->name('producto.detalle');
-Route::get('/como-comprar', [HomeController::class, 'comoComprar'])->name('como-comprar');
-Route::get('/metodos-de-pago', [HomeController::class, 'metodosPago'])->name('metodos-pago');
-Route::get('/contacto', [HomeController::class, 'contacto'])->name('contacto');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');

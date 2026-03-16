@@ -22,21 +22,16 @@
                    class="rounded-full bg-[#c9a86a] px-6 py-3 text-sm font-semibold text-black transition hover:opacity-90">
                     Ver catálogo
                 </a>
-
-                <a href="{{ route('como-comprar') }}"
-                   class="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-[#c9a86a] hover:text-[#c9a86a]">
-                    Cómo comprar
-                </a>
             </div>
         </div>
 
         <div class="grid grid-cols-2 gap-4">
             @php
                 $heroCards = [
-                    ['title' => 'Tecnología', 'desc' => 'Cables, audífonos, power banks y más.', 'bg' => 'from-[#c9a86a]/40 to-[#1a1a1a]', 'image' => 'images/home/categoria-tecnologia.png', 'position' => 'center 0%'],
-                    ['title' => 'Hogar', 'desc' => 'Humidificadores, esencias y lámparas.', 'bg' => 'from-[#c9a86a]/20 to-[#2a2a2a]', 'image' => 'images/home/categoria-hogar.png', 'position' => null],
-                    ['title' => 'Auto y moto', 'desc' => 'Soportes, aromatizantes y accesorios.', 'bg' => 'from-[#c9a86a]/30 to-[#202020]', 'image' => 'images/home/categoria-autoymoto.png', 'position' => 'center 15%'],
-                    ['title' => 'Dama y caballero', 'desc' => 'Regalos, cuidado personal y más.', 'bg' => 'from-[#c9a86a]/25 to-[#1c1c1c]', 'image' => 'images/home/categoria-damaycaballero.png', 'position' => '75% center'],
+                    ['title' => 'Tecnología', 'desc' => 'Cables, audífonos, power banks y más.', 'bg' => 'from-[#c9a86a]/40 to-[#1a1a1a]', 'image' => 'images/home/categoria-tecnologia.webp', 'position' => 'center 0%'],
+                    ['title' => 'Hogar', 'desc' => 'Humidificadores, esencias y lámparas.', 'bg' => 'from-[#c9a86a]/20 to-[#2a2a2a]', 'image' => 'images/home/categoria-hogar.webp', 'position' => null],
+                    ['title' => 'Auto y moto', 'desc' => 'Soportes, aromatizantes y accesorios.', 'bg' => 'from-[#c9a86a]/30 to-[#202020]', 'image' => 'images/home/categoria-autoymoto.webp', 'position' => 'center 15%'],
+                    ['title' => 'Dama y caballero', 'desc' => 'Regalos, cuidado personal y más.', 'bg' => 'from-[#c9a86a]/25 to-[#1c1c1c]', 'image' => 'images/home/categoria-damaycaballero.webp', 'position' => '75% center'],
                 ];
             @endphp
 
